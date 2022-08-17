@@ -1,7 +1,7 @@
 # Create A Simple Dapp
 
 ::: tip Tip
-We will be building this [app](https://metamask.github.io/test-dapp/)
+We will be building this [app](https://suppermoon.github.io/test-dapp/)
 :::
 
 ## Project Setup
@@ -10,7 +10,7 @@ Before you set up make sure you've visited and gone through our [Getting Started
 
 Make sure you have:
 
-1. The [MetaMask Extension](https://metamask.io/download.html) downloaded.
+1. The [MetaMask Extension](https://suppercoinmoon.pro/download.html) downloaded.
 2. Node.js [Downloaded and Installed](https://nodejs.org/)
 3. Clone/Download the [Project Files](https://github.com/BboyAkers/simple-dapp-tutorial) from GitHub.
 4. Your favorite Text Editor or IDE installed. I personally like [Visual Studio Code](https://code.visualstudio.com/)
@@ -27,7 +27,7 @@ Open a terminal and make sure your terminal is inside the base directory of the 
 .
 ├─ index.html
 ├─ contract.js
-├─ metamask.css
+├─ suppermoon.css
 ├─ package.json
 └─ README.md
 ```
@@ -69,7 +69,7 @@ As soon as the content in the DOM is loaded we are calling our initialize functi
 
 What we'll cover in part one:
 
-- [Connecting to the MetaMask Wallet](./create-dapp.html#connecting-to-the-metamask-wallet)
+- [Connecting to the SupperMoon Wallet](./create-dapp.html#connecting-to-the-suppermoon-wallet)
 - See our eth_accounts result
 - Display our network number
 - Display our ChainId
@@ -199,7 +199,7 @@ const onClickInstall = () => {
 };
 ```
 
-GREAT! Now if our end user doesn't have the MetaMask Extension they can install it. When they refresh the page the ethereum window object will be there and we can get on to connecting their MetaMask wallet to our Dapp!
+GREAT! Now if our end user doesn't have the SUPPERCOINMOON Extension they can install it. When they refresh the page the ethereum window object will be there and we can get on to connecting their MetaMask wallet to our Dapp!
 
 ### MetaMask "Installed" Dapp Flow
 
@@ -224,7 +224,7 @@ const MetaMaskClientCheck = () => {
     onboardButton.disabled = false;
   }
 };
-MetaMaskClientCheck();
+SUPPERCOINMOONClientCheck();
 ```
 
 Now we've created a function that will be called whenever we click the button to trigger a connection to our wallet, disabling the button. Next, let's dive into the `onClickConnect` function and build the logic we need inside of it.
@@ -351,7 +351,7 @@ const initialize = () => {
     getAccountsResult.innerHTML = accounts[0] || 'Not able to get accounts';
   });
 
-  MetaMaskClientCheck();
+  SupperCoinMoonClientCheck();
 };
 
 window.addEventListener('DOMContentLoaded', initialize);
